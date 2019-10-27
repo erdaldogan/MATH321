@@ -16,14 +16,16 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Main1 {
+public class RegExp {
     public static void main(String[] args) throws IOException {
         File inputFile = new File("input.txt");
-        FileOutputStream outputStream = new FileOutputStream(new File("output1.txt"));
+        FileOutputStream outputStream = new FileOutputStream(new File("output.txt"));
         Scanner input = new Scanner(inputFile);
 
         while (input.hasNextLine()) {
             String inputLine = input.nextLine();
+            inputLine = x_of_y(inputLine);
+            inputLine = capitals(inputLine);
             inputLine = beginning_end_punctuations(inputLine);
             inputLine = and_or(inputLine);
             inputLine = said(inputLine);
@@ -31,9 +33,7 @@ public class Main1 {
             inputLine = repeating_digits(inputLine);
             inputLine = past_tense_ed(inputLine);
             inputLine = past_tense_ged(inputLine);
-            inputLine = x_of_y(inputLine);
             inputLine = phone_number(inputLine);
-            inputLine = capitals(inputLine);
             //inputLine = pluralize(inputLine);
 
 
@@ -117,21 +117,25 @@ public class Main1 {
     private static String beginning_end_punctuations(String inputLine) {
         Pattern pattern = Pattern.compile("\\s?[^\\s\\w]+[a-zA-z[^0-9\\W]]+[^\\s\\w]+\\s?");
         Matcher matcher = pattern.matcher(inputLine);
-        while (matcher.find()) {
+        while (matcher.find())
             inputLine = inputLine.replaceFirst("([^\\s\\w]+)(\\w+)([^\\s\\w]+)", "$2$1$3");
-        }
+
         return inputLine;
     }
 
     private static String capitals(String inputLine) {
-        Pattern pattern = Pattern.compile("^(\\w+\\s+8)+(\\w*[A-Z]+\\w*)");
+        Pattern pattern = Pattern.compile("(\\w*[A-Z]+\\w*)");
         Matcher matcher = pattern.matcher(inputLine);
         while (matcher.find()) {
-            String temp =  matcher.group(2).toLowerCase();
-            System.out.printf("catal %s\n", temp);
+            String temp =  matcher.group(0).toLowerCase();
             inputLine = inputLine.replaceFirst("\\b\\w*[A-Z]+\\w*\\b", temp);
         }
-
+        Pattern firstCharPattern = Pattern.compile("^(\\w)");
+        Matcher firstCharMatcher = firstCharPattern.matcher(inputLine);
+        if (firstCharMatcher.find()) {
+            String fistChar = firstCharMatcher.group(0).toUpperCase();
+            inputLine = inputLine.replaceFirst("^\\w", fistChar);
+        }
         return inputLine;
     }
 
