@@ -47,19 +47,19 @@ public class Main {
                 System.out.println("1");
                 outputLine = inputLine.replaceAll("\\W+$", ".");
             }
-            else if (inputLine.matches(".*\\w+\\D(\\d)\\1+.*")) {  // Mary666st --> MaryVIst
+            else if (inputLine.matches(".*\\w+(\\d)\\1+\\D.*")) {  // Mary666st --> MaryVIst
                 System.out.println("2");
                 Pattern pattern = Pattern.compile("(\\d)\\1+");
                 Matcher matcher = pattern.matcher(inputLine);
                 if (matcher.find()) {
                     int matchedInt = Integer.parseInt(matcher.group(1));
-                    outputLine = inputLine.replaceFirst("(\\d)\\1+", intToRoman(matchedInt));
+                    outputLine = inputLine.replaceFirst("(\\d)\\1+", digitToChar(matchedInt));
                 }
             }
 
-            else if (inputLine.matches("\\w+(lk|ch)$")) { // talk --> talked
+            else if (inputLine.matches(".*\\w+(lk|ch).*")) { // talk --> talked
                 System.out.println("3");
-                outputLine = inputLine.replaceAll("(lk|ch)$", "$1ed");
+                outputLine = inputLine.replaceAll("(\\w+)(lk|ch)", "$1$2ed");
             }
             else if (inputLine.matches("\\w+[eg|ag]$")) { // drag --> dragged
                 System.out.println("4");
@@ -101,7 +101,7 @@ public class Main {
      * @param num
      * @return Roman Literal equivalent of the given number
      */
-    public static String intToRoman(int num){
+    /*public static String intToRoman(int num){
         assert num > 0: "A number which is less than or equal to 0 cannot be converted to roman literals!";
         StringBuilder stringBuilder = new StringBuilder();
         int t = 1000, y = 100;
@@ -141,15 +141,17 @@ public class Main {
      * @return The character if the given number has a single character representation in Roman number systems.
      * For 1, return I; for 5, return V; for 10 return X etc.
      */
-    private static String intToChar(int num){
+    private static String digitToChar(int num){
         switch (num){
             case 1: return "I";
+            case 2: return "II";
+            case 3: return "III";
+            case 4: return "IV";
             case 5: return "V";
-            case 10: return "X";
-            case 50: return "L";
-            case 100: return "C";
-            case 500: return "D";
-            case 1000: return "M";
+            case 6: return "VI";
+            case 7: return "VII";
+            case 8: return "VIII";
+            case 9: return "IX";
         }
         return null;
     }
