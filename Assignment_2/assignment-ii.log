@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  26 NOV 2019 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  27 NOV 2019 00:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -319,109 +319,140 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 <Q1_a.png, id=1, 167.4255pt x 276.43275pt>
 File: Q1_a.png Graphic file (type png)
 <use Q1_a.png>
-Package pdftex.def Info: Q1_a.png  used on input line 21.
+Package pdftex.def Info: Q1_a.png  used on input line 20.
 (pdftex.def)             Requested size: 50.22803pt x 82.93045pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 24.
+(Font)              <7> on input line 23.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 24.
+(Font)              <5> on input line 23.
 <Q1_b.png, id=2, 182.48175pt x 276.43275pt>
 File: Q1_b.png Graphic file (type png)
 <use Q1_b.png>
-Package pdftex.def Info: Q1_b.png  used on input line 27.
+Package pdftex.def Info: Q1_b.png  used on input line 26.
 (pdftex.def)             Requested size: 54.74493pt x 82.93045pt.
 
-Overfull \hbox (2.2222pt too wide) in paragraph at lines 19--32
+Overfull \hbox (2.2222pt too wide) in paragraph at lines 18--31
 []$[]$ $[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 38--41
+Underfull \hbox (badness 10000) in paragraph at lines 37--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
+Underfull \hbox (badness 10000) in paragraph at lines 44--49
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--55
+Underfull \hbox (badness 10000) in paragraph at lines 52--57
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--61
+Underfull \hbox (badness 10000) in paragraph at lines 59--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--71
+Underfull \hbox (badness 10000) in paragraph at lines 67--75
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--83
+Underfull \hbox (badness 10000) in paragraph at lines 77--87
 
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 36--84
+Overfull \hbox (5.0pt too wide) in paragraph at lines 35--89
 $[]$
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 36--84
+Overfull \hbox (5.0pt too wide) in paragraph at lines 35--89
 []$
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 36--84
+Overfull \hbox (5.0pt too wide) in paragraph at lines 35--89
 []$
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 36--84
+Overfull \hbox (5.0pt too wide) in paragraph at lines 35--89
 []$
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 36--84
+Overfull \hbox (5.0pt too wide) in paragraph at lines 35--89
 []$
  []
 
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 36--84
+Overfull \hbox (5.0pt too wide) in paragraph at lines 35--89
 []$ 
  []
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Q1_a.
-png> <./Q1_b.png>] [2] (./assignment-ii.aux) ) 
+png> <./Q1_b.png>]
+<Q2.png, id=17, 649.2255pt x 328.8285pt>
+File: Q2.png Graphic file (type png)
+<use Q2.png>
+Package pdftex.def Info: Q2.png  used on input line 96.
+(pdftex.def)             Requested size: 324.61195pt x 164.41385pt.
+<Q2_epsilon.png, id=18, 74.679pt x 98.16675pt>
+File: Q2_epsilon.png Graphic file (type png)
+<use Q2_epsilon.png>
+Package pdftex.def Info: Q2_epsilon.png  used on input line 106.
+(pdftex.def)             Requested size: 37.3394pt x 49.08325pt.
+<Q2_epsilon_final.png, id=19, 74.679pt x 98.16675pt>
+File: Q2_epsilon_final.png Graphic file (type png)
+<use Q2_epsilon_final.png>
+Package pdftex.def Info: Q2_epsilon_final.png  used on input line 111.
+(pdftex.def)             Requested size: 37.3394pt x 49.08325pt.
+<Q2_a.png, id=20, 74.679pt x 98.16675pt>
+File: Q2_a.png Graphic file (type png)
+<use Q2_a.png>
+Package pdftex.def Info: Q2_a.png  used on input line 116.
+(pdftex.def)             Requested size: 37.3394pt x 49.08325pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 125.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 125.
+ [2 <./Q2.png> <./Q2_epsilon.png> <./Q2_epsilon_final.png> <./Q2_a.png>] (./ass
+ignment-ii.aux) ) 
 Here is how much of TeX's memory you used:
- 4242 strings out of 492616
- 67796 string characters out of 6129480
- 152008 words of memory out of 5000000
- 8111 multiletter control sequences out of 15000+600000
- 7886 words of font info for 28 fonts, out of 8000000 for 9000
+ 4281 strings out of 492616
+ 68435 string characters out of 6129480
+ 154008 words of memory out of 5000000
+ 8142 multiletter control sequences out of 15000+600000
+ 8194 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,8n,94p,291b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy7.pfb>
-Output written on assignment-ii.pdf (2 pages, 114251 bytes).
+ 59i,9n,94p,291b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
+7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.p
+fb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on assignment-ii.pdf (2 pages, 199985 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 65 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
