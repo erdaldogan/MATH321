@@ -1,0 +1,37 @@
+MEF University Computer Engineering Dept.
+MATH 321 - Automata Theory and Formal Languages, Fall 2019
+Assignment 1 - RegEx Applications
+
+Erdal Sidal Dogan
+#041701076
+September 27, 2019
+
+How to run?
+1-) Make sure you are on JDK 13
+
+2-) Run the .jar file from terminal using the following command
+"java -jar RegExp.jar [OPTION] [INPUT_FILE]"
+
+Options;
+-p, --plural: Pluralize every word.
+
+
+3-) Pluralization of every word is optional, in default it is disabled. You can enable it by passing "-p" flag as argument.
+"java -jar RegExp.jar -p [INPUT_FILE]"
+
+4-) A file named "output.txt" will be generated in the current directory.
+
+
+How to use it in java files?
+1-) Make sure you are on JDK 13
+
+2-) Add .jar file to your project either by using your IDE or putting them in your class path with following commands;
+"java -classpath RegExp.jar myClass.java"
+"javac -classpath RegExp.jar myClass.java"
+
+3-) Main class is named "RegExp", and it only has a "main" method. You should pass your inputs and -p flag into "RegExp.main" function as arguments. Such as;
+"String[] arr = {"input.txt"};"
+"RegExp.main(arr);"
+
+4-) A file named "output.txt" will be generated in the current directory.
+

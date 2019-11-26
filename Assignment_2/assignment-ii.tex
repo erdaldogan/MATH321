@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[top=20mm]{geometry}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\usepackage{subcaption}
+\usepackage{caption}
+\usepackage{multicol}
+
+
+\author{Erdal Sidal Dogan \\ MEF University\\ \#041701076}
+\title{MATH321 - Assignment-II}
+\begin{document}
+	\maketitle
+	\section{Q1}
+ \subsection{Q1-a}
+\begin{figure}[h]
+	\captionsetup[subfigure]{justification=centering}
+
+	\begin{subfigure}[h]{0.5\textwidth}
+		\hspace{2.85cm}
+		\includegraphics[scale=0.3]{Q1_a} 
+		\caption{Path 1}
+		\label{fig:subim1}
+	\end{subfigure}
+	\begin{subfigure}[h]{0.5\textwidth}
+		\hspace{2.85cm}
+		\includegraphics[scale=0.3]{Q1_b}
+		\caption{Path 2}
+		\label{fig:subim2}
+	\end{subfigure}
+	\label{fig:image2}
+\end{figure}
+
+\subsection{Q1-b}
+\begin{multicols}{2}
+	\noindent
+	\begin{minipage}{0.5\textwidth}
+		S $\rightarrow$ aABA $\mid$ aB\\
+		A $\rightarrow$ bA $\mid$ b $\mid$ $ \varepsilon $\\
+		B $ \rightarrow $ cB $ \mid $ c $ \mid $ $ \varepsilon $\\
+	\end{minipage}
+	% \qquad
+	\begin{minipage}{0.5\textwidth}
+		$S_0$ $\rightarrow$ S\\
+		S $\rightarrow$ aABA $\mid$ aB\\
+		A $\rightarrow$ bA $\mid$ b $\mid$ $ \varepsilon $\\
+		B $ \rightarrow $ cB $ \mid $ c $ \mid $ $ \varepsilon $\\
+	\end{minipage}
+	% \qquad
+	\begin{minipage}{0.5\textwidth}
+		$S_0$ $\rightarrow$ S\\
+		S $\rightarrow$ aABA $\mid$ aB $\mid$ aAA $\mid$ a\\
+		A $\rightarrow$ bA $\mid$ b $\mid$ $ \varepsilon $\\
+		B $ \rightarrow $ cB $ \mid $ c\\
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		$S_0$ $\rightarrow$ S\\
+		S $\rightarrow$ aABA $\mid$ aB $\mid$ aAA $\mid$ a $\mid$ aAB $\mid$ aBA $\mid$ aA\\
+		A $\rightarrow$ bA $\mid$ b \\
+		B $ \rightarrow $ cB $ \mid $ c \\
+	\end{minipage}
+	%\qquad
+	\begin{minipage}{0.5\textwidth}
+		$S_0$ $\rightarrow$ S\\
+		S $\rightarrow$ $A_0$ABA $\mid$ $A_0$B $\mid$ $A_0$AA $\mid$ a $\mid$ $A_0$AB $\mid$ $A_0$BA $\mid$ $A_0$A\\
+		A $\rightarrow$ $B_0$A $\mid$ b \\
+		B $ \rightarrow $ $C_0$B $ \mid $ c \\
+		$A_0$ $ \rightarrow $ a \\
+		$B_0$ $ \rightarrow $ b \\
+		$C_0$ $ \rightarrow $ c \\
+	\end{minipage}
+	\begin{minipage}{0.5\textwidth}
+		$S_0$ $\rightarrow$ $A_{0A}B_A$ $\mid$ $A_0$B $\mid$ $A_0A_A$ $\mid$ a $\mid$ $A_0A_B$ $\mid$ $A_0B_A$ $\mid$ $A_0$A\\
+		A $\rightarrow$ $B_0$A $\mid$ b \\
+		B $ \rightarrow $ $C_0$B $ \mid $ c \\
+		$A_0$ $ \rightarrow $ a \\
+		$B_0$ $ \rightarrow $ b \\
+		$C_0$ $ \rightarrow $ c \\
+		$A_A$ $ \rightarrow $ AA \\
+		$A_B$ $ \rightarrow $ AB \\
+		$B_A$ $ \rightarrow $ BA \\
+		$A_{0A}$ $ \rightarrow $ $A_0A$ \\
+	\end{minipage}
+\end{multicols}
+\newpage
+\subsection{Q1-c}
+There must be equal number of 0's and 1's in the string. $L = \{ w \mid  w = (01)^* \cup (10)^*\}$
+\section{Q2}
+	
+\end{document}
