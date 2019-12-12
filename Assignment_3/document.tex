@@ -1,28 +1,48 @@
 \documentclass{article}
-\usepackage{geometry}
+\usepackage[top=20mm, bottom=20mm]{geometry}
 
 \title{MATH321 - Assignment 3}
 \author{Erdal Sidal Dogan\\ MEF University\\ \#041701076}
 \begin{document}
 	\maketitle
 	\section{Q1}
+	\subsection{Formal Definition}
+	$Q = \{Q_0, Q_1, Q_2, Q_3, Q_4, Q_5, Q_6, Q_7\}$\\
+	$\Sigma = \{A, C, D, X, Y, Z\}$\\
+	$\Gamma =  \{A, D, X, Y, Z\}$\\
+	$\delta: $ See section \ref{tf}\\
+	$q_0 = Q_0$\\
+	$q_{accept} = \{ Q_7\}$\\
 	
-\begin{table}[h]
-	\centering
-		\begin{tabular}{c|c|c|c|c|c|c}
-			$\delta$ & A & C & D & X & Y & Z \\
-			\hline
-			$q_0$ & $(q_1, X, R)$ & & & & $(q_4, Y, R)$ & \\
-			$q_1$ & $(q_1, A, R)$  & & $(q_2, Y, R)$ & & $(q_1, Y, R)$ & \\
-			$q_2$ & & $(q_3, Z, L)$ & $(q_2, D, R)$ & & & $(q_2, Z, R)$ \\
-			$q_3$ & $(q_3, A, L)$ & & $(q_3, D, L)$ & $(q_0, X, R)$ & $(q_3, Y, L)$ & $(q_3, Z, L)$ \\
-			$q_4$ & & & $(q_5, Y, R)$ & & $(q_4, Y, R)$&$(q_7, Z, L)$ \\
-			$q_5$ & & $(q_6, Z, L)$ & $(q_5, D, R)$ & & &$(q_5, Z, R)$ \\
-			$q_6$ & & & $(q_6, D, L)$ & & $(q_4, Y, R)$ & $(q_6, Z, L)$ \\
-			$q_7$ & & & & & & \\
-
-	\end{tabular}
-	\caption{Transition Function Table}
-\end{table}
+	\subsection{Transition Function $(\delta)$} \label{tf}
+	\begin{table}[h]
+		\centering
+			\begin{tabular}{c|c|c|c|c|c|c}
+				$\delta$ & A & C & D & X & Y & Z \\
+				\hline
+				$Q_0$ & $(Q_1, X, R)$ & & & & $(Q_4, Y, R)$ & \\
+				$Q_1$ & $(Q_1, A, R)$  & & $(Q_2, Y, R)$ & & $(Q_1, Y, R)$ & \\
+				$Q_2$ & & $(Q_3, Z, L)$ & $(Q_2, D, R)$ & & & $(Q_2, Z, R)$ \\
+				$Q_3$ & $(Q_3, A, L)$ & & $(Q_3, D, L)$ & $(Q_0, X, R)$ & $(Q_3, Y, L)$ & $(Q_3, Z, L)$ \\
+				$Q_4$ & & & $(Q_5, Y, R)$ & & $(Q_4, Y, R)$&$(Q_7, Z, L)$ \\
+				$Q_5$ & & $(Q_6, Z, L)$ & $(Q_5, D, R)$ & & &$(Q_5, Z, R)$ \\
+				$Q_6$ & & & $(Q_6, D, L)$ & & $(Q_4, Y, R)$ & $(Q_6, Z, L)$ \\
+				$Q_7$ & & & & & & \\
+	
+		\end{tabular}
+		\caption{Transition Function Table}
+	\end{table}
+	
+	\subsection{Configuration for 'AADDDCCCCCC'}
+	$q_0$AADDDCCCCCC\\
+	X$q_1$ADDDCCCCCC\\
+	XA$q_1$DDDCCCCCC\\
+	XAY$q_2$DDCCCCCC\\
+	XAYD$q_2$DCCCCCC\\
+	XAYDD$q_2$CCCCCC\\
+	XAYD$q_3$DZCCCCC\\
+	\vdots \\
+	$q_3$XAYDDZCCCCC\\
+	X$q_0$AYDDZCCCCC\\
 
 \end{document}
