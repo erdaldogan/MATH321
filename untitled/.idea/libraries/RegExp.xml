@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="RegExp">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../Assignment_1/RegExp.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
