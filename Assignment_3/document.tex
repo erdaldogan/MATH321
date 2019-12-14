@@ -1,6 +1,8 @@
 \documentclass{article}
 \usepackage[top=20mm, bottom=20mm]{geometry}
 \usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[center]{caption}
 
 \title{MATH321 - Assignment 3}
 \author{Erdal Sidal Dogan\\ MEF University\\ \#041701076}
@@ -86,24 +88,32 @@
 			XAA$q_1$DDC\\
 			XAAY$q_2$DC\\
 			XAAYD$q_2$C\\
-			
 		\end{minipage}
 		
 		\begin{minipage}{0.33\textwidth}
 			XAA$q_3$YDZ\\
 			XA$q_3$AYDZ\\
-			\vdots \\
+			X$q_3$AAYDZ\\
 			$q_3$XAAYDZ\\
 			X$q_0$AAYDZ\\
+			XX$q_1$AYDZ\\
 		\end{minipage}
 	
 		\begin{minipage}{0.33\textwidth}
-			XX$q_1$AYDZ\\
-			\vdots \\
+			XXA$q_1$YDZ\\
+			XXAY$q_1$DZ\\
 			XXAY$q_1$DZ\\
 			XXAYY$q_2$Z\\
 			XXAYYZ$q_2$B\\
 		\end{minipage}
 	\end{multicols}
+
+	\section{Q2}
+	\subsection{Turing Machine}
+	\begin{center}
+		\vspace{2em}
+		\includegraphics[scale=.5]{Q2.png}
+	\end{center}
+	\captionof{figure}{Turing Machine that puts blank symbol between each and every character in tape \\ ($B \rightarrow L$ = $B \rightarrow B, L$)}
 
 \end{document}
